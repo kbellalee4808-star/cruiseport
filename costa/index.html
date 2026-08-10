@@ -36,7 +36,7 @@
   .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
 
   /* HERO */
-  .hero {
+  .hero { position:relative;
     background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
     color: #fff;
     padding: 60px 20px 50px;
@@ -284,7 +284,8 @@
 
 <!-- HERO -->
 <header class="hero">
-  <div class="hero-emoji">🛳️</div>
+    <a href="../" style="display:inline-flex;align-items:center;gap:5px;color:rgba(255,255,255,0.75);font-size:13px;font-weight:600;text-decoration:none;position:absolute;top:max(18px,env(safe-area-inset-top));left:20px;letter-spacing:0.3px;">🏠 홈</a>
+<div class="hero-emoji">🛳️</div>
   <h1>코스타 크루즈 생활백서</h1>
   <div class="accent-bar"></div>
   <div class="sub">처음 타도 셀프로 OK · Costa Cruises</div>
