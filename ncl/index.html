@@ -31,7 +31,7 @@
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
   .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
-  .hero { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%); color: #fff; padding: 60px 20px 50px; text-align: center; position: relative; overflow: hidden; }
+  .hero { position:relative; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%); color: #fff; padding: 60px 20px 50px; text-align: center; position: relative; overflow: hidden; }
   .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 400px; height: 400px; background: radial-gradient(circle, var(--accent) 0%, transparent 70%); opacity: 0.2; }
   .hero-emoji { font-size: 56px; margin-bottom: 16px; position: relative; }
   .hero h1 { font-size: 30px; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 10px; position: relative; }
@@ -95,7 +95,8 @@
 <body>
 
 <header class="hero">
-  <div class="hero-emoji">🛳️</div>
+    <a href="../" style="display:inline-flex;align-items:center;gap:5px;color:rgba(255,255,255,0.75);font-size:13px;font-weight:600;text-decoration:none;position:absolute;top:max(18px,env(safe-area-inset-top));left:20px;letter-spacing:0.3px;">🏠 홈</a>
+<div class="hero-emoji">🛳️</div>
   <h1>노르웨지안 크루즈 생활백서</h1>
   <div class="accent-bar"></div>
   <div class="sub">Freestyle Cruising · NCL</div>
